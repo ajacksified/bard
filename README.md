@@ -1,5 +1,5 @@
-svalbard
-===============
+bard
+====
 
 Node bootstrap. Server + Client rendering. Mustache and Backbone. Svalbard because it's cool.
 
