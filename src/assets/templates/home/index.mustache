@@ -1,0 +1,46 @@
+<div class='container'>
+  <div class='row'>
+    <div class='span12'>
+      <h2>Some content</h2>
+      <p>Stuff from the index template</p>
+    </div>
+  </div>
+  <div class='row'>
+    <div class='span12'>
+      <form action="/news" method="POST" id="add_news_form">
+        <legend>Add News</legend>
+
+        <div class="control-group">
+          <label for="news_title">Title</label>
+          <div class="controls">
+            <input type="text" id="news_title" name="title" />
+          </div>
+        </div>
+
+        <div class="control-group">
+          <label for="news_body">Body</label>
+          <div class="controls">
+            <textarea id="news_body" name="body"></textarea>
+          </div>
+        </div>
+
+        <div class="control-group">
+          <div class="controls">
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+  <div class='row'>
+    <div class='span12'>
+      {{#news}}
+        <article id="news_{{id}}">
+          <h1>{{title}}</h1>
+          <p>{{body}}</p>
+          <a class='btn btn-small btn-danger delete-news' data-news-id="{{id}}" href="/api/news/{{id}}?_method=DELETE">Delete</a>
+        </article>
+      {{/news}}
+    </div>
+  </div>
+</div>

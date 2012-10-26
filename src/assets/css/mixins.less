@@ -1,0 +1,23 @@
+.vertical-gradient(@c1, @c2) {
+  background-image: linear-gradient(bottom, @c1 25%, @c2 75%);
+  background-image: -o-linear-gradient(bottom, @c1 25%, @c2 75%);
+  background-image: -moz-linear-gradient(bottom, @c1 25%, @c2 75%);
+  background-image: -webkit-linear-gradient(bottom, @c1 25%, @c2 75%);
+  background-image: -ms-linear-gradient(bottom, @c1 25%, @c2 75%);
+
+  background-image: -webkit-gradient(
+    linear,
+    left bottom,
+    left top,
+    color-stop(0.25, @c1),
+    color-stop(0.75, @c2)
+  );
+}
+
+.transition(@s: all, @t: 1s, @a: ease-in-out) {
+  -webkit-transition: @s @t @a;
+  -moz-transition: @s @t @a;
+  -o-transition: @s @t @a;
+  -ms-transition: @s @t @a;
+  transition: @s @t @a;
+}
