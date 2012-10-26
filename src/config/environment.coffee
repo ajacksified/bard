@@ -2,7 +2,8 @@
 # up the compilation for js, css, etc. You shouldn't have to do annything here.
 #
 # I added automatic template bundling, since Mincer doesn't have Mustache
-# support baked in. Like the others, you'll call it once to compile everything.
+# support baked in. It gets loaded from the app.coffee file and is served with
+# the rest of your javascript.
 
 UglifyJS = require('uglify-js')
 Csso = require('csso')
