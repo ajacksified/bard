@@ -21,4 +21,15 @@ without proper Javascript support
 
 There's a lot left to do, and this will forever be a work in progress.
 
+How
+---
+
+Install node.
+
+`npm install`
+
+`npm start`
+
+License
+-------
 MIT licensed. Do whatevs. Build your app right.
